@@ -1,0 +1,23 @@
+.common-content {
+    .common-title {
+        h2 {
+            line-height: 125%;
+            margin-top: 24px;
+            margin-bottom: 16px;
+            @include screen-576 {
+                font-size: 45px;
+            }
+            @include screen-400 {
+                font-size: 33px;
+                line-height: 120%;
+            }
+        }
+    }
+
+    .common-subtitle {
+        p {
+            line-height: 160%;
+            margin-bottom: 80px;
+        }
+    }
+}

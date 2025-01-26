@@ -1,0 +1,61 @@
+/********* Footer *********/
+
+/********* Footer Section Start *********/
+.footer-section {
+    background-color: var(--white-color);
+    padding: 356px 0 120px 0;
+    position: relative;
+    @include screen-768 {
+        padding: 275px 0 40px 0;
+    }
+}
+
+.footer-copyright {
+    margin-top: 16px;
+    p {
+        color: var(--primary-color);
+        @include screen-768 {
+            font-size: 12px;
+        }
+    }
+}
+
+.footer-btn-group {
+    display: flex;
+    justify-content: end;
+    gap: 16px;
+    @include screen-576 {
+        justify-content: start;
+        margin-bottom: 24px;
+    }
+}
+
+.footer-btn {
+    color: var(--primary-color);
+    background-color: var(--white-color);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--main-font);
+    padding: 11px 14px;
+    border: 1px solid var(--footer-border-color);
+    border-radius: 12px;
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    box-shadow: var(--primary-box-shadow);
+    transition: 0.3S;
+    
+    &:hover {
+        background-color: var(--secondary-color);
+        color: var(--white-color);
+        svg {
+            path {
+                fill: #ffffff;
+            }
+        }
+    }
+    @include screen-400 {
+        padding: 11px 37px;
+    }
+}
+/********* Footer Section End *********/
